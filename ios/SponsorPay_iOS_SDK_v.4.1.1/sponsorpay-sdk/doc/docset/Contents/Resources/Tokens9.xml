@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SPInterstitialViewControllerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SPInterstitialViewControllerDelegate</TokenIdentifier>
+			<Abstract type="html">The SPInterstitialViewControllerDelegate protocol is to be implemented by classes that wish to be notified of the availability of Interstitial offers from the SponsorPay platform and status changes in the lifecycle of SPInterstitialViewControllerDelegate.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SPInterstitialViewControllerDelegate/interstitialViewController:didChangeStatus:</TokenIdentifier>
+			<Abstract type="html">Sent when the corresponding SPInterstitialViewControllerDelegate changes status, denoting an answer from the server which indicates the availability of an Interstitial offer, a close event, or an error.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)interstitialViewController:(SPInterstitialViewController *)interstitialViewController didChangeStatus:(SPInterstitialViewControllerStatus)status</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>interstitialViewController</Name>
+					<Abstract type="html">The SPInterstitialViewController which is sending this message.</Abstract>
+				</Parameter><Parameter>
+					<Name>status</Name>
+					<Abstract type="html">A status code defined in SPInterstitialViewControllerStatus.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/interstitialViewController:didChangeStatus:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

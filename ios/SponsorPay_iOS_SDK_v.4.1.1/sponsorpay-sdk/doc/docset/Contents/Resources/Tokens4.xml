@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SPInterstitialViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SPInterstitialViewController</TokenIdentifier>
+			<Abstract type="html">SPInterstitialViewController is a subclass of SPAdvertisementViewController that requests and shows SponsorPay&apos;s Mobile Interstitial.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SPInterstitialViewController/setDelegate:</TokenIdentifier>
+			<Abstract type="html">Delegate conforming to the SPInterstitialViewControllerDelegate protocol that will be notified of events in the lifecycle of the interstitial, including when no offers are available and when a shown interstitial is closed.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;SPInterstitialViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SPInterstitialViewController/delegate</TokenIdentifier>
+			<Abstract type="html">Delegate conforming to the SPInterstitialViewControllerDelegate protocol that will be notified of events in the lifecycle of the interstitial, including when no offers are available and when a shown interstitial is closed.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;SPInterstitialViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SPInterstitialViewController/delegate</TokenIdentifier>
+			<Abstract type="html">Delegate conforming to the SPInterstitialViewControllerDelegate protocol that will be notified of events in the lifecycle of the interstitial, including when no offers are available and when a shown interstitial is closed.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;SPInterstitialViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SPInterstitialViewController/setSkin:</TokenIdentifier>
+			<Abstract type="html">User defined skin name to customize the appearance of the shown offer.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *skin</Declaration>
+			
+			
+			<Anchor>//api/name/skin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SPInterstitialViewController/skin</TokenIdentifier>
+			<Abstract type="html">User defined skin name to customize the appearance of the shown offer.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *skin</Declaration>
+			
+			
+			<Anchor>//api/name/skin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SPInterstitialViewController/skin</TokenIdentifier>
+			<Abstract type="html">User defined skin name to customize the appearance of the shown offer.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *skin</Declaration>
+			
+			
+			<Anchor>//api/name/skin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SPInterstitialViewController/setBackgroundImageUrl:</TokenIdentifier>
+			<Abstract type="html">URL of a background image to customize the appearance of the shown offer.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *backgroundImageUrl</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundImageUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SPInterstitialViewController/backgroundImageUrl</TokenIdentifier>
+			<Abstract type="html">URL of a background image to customize the appearance of the shown offer.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *backgroundImageUrl</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundImageUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SPInterstitialViewController/backgroundImageUrl</TokenIdentifier>
+			<Abstract type="html">URL of a background image to customize the appearance of the shown offer.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *backgroundImageUrl</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundImageUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SPInterstitialViewController/setLoadingTimeout:</TokenIdentifier>
+			<Abstract type="html">Time to wait for a requested offer to arrive before giving up.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSTimeInterval loadingTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/loadingTimeout</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SPInterstitialViewController/loadingTimeout</TokenIdentifier>
+			<Abstract type="html">Time to wait for a requested offer to arrive before giving up.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSTimeInterval loadingTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/loadingTimeout</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SPInterstitialViewController/loadingTimeout</TokenIdentifier>
+			<Abstract type="html">Time to wait for a requested offer to arrive before giving up.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSTimeInterval loadingTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/loadingTimeout</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SPInterstitialViewController/initWithUserId:appId:</TokenIdentifier>
+			<Abstract type="html">This initializer has been deprecated and will be removed from a future SDK release. Please don&apos;t initialize this class directly, rather access it through [SponsorPaySDK interstitialViewController] or [SponsorPaySDK interstitialViewControllerForCredentials:]</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithUserId:(NSString *)userId appId:(NSString *)appId</Declaration>
+			
+			
+			<Anchor>//api/name/initWithUserId:appId:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SPInterstitialViewController/initWithUserId:appId:backgroundUrl:skin:</TokenIdentifier>
+			<Abstract type="html">This initializer has been deprecated and will be removed from a future SDK release. Please don&apos;t initialize this class directly, rather access it through [SponsorPaySDK interstitialViewController] or [SponsorPaySDK interstitialViewControllerForCredentials:]</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithUserId:(NSString *)theUserId appId:(NSString *)theAppId backgroundUrl:(NSString *)theBackgroundUrl skin:(NSString *)theSkinName</Declaration>
+			
+			
+			<Anchor>//api/name/initWithUserId:appId:backgroundUrl:skin:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SPInterstitialViewController/initWithUserId:appId:backgroundUrl:skin:loadingTimeout:</TokenIdentifier>
+			<Abstract type="html">This initializer has been deprecated and will be removed from a future SDK release. Please don&apos;t initialize this class directly, rather access it through [SponsorPaySDK interstitialViewController] or [SponsorPaySDK interstitialViewControllerForCredentials:]</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithUserId:(NSString *)theUserId appId:(NSString *)theAppId backgroundUrl:(NSString *)theBackgroundUrl skin:(NSString *)theSkinName loadingTimeout:(NSTimeInterval)loadingTimeOut</Declaration>
+			
+			
+			<Anchor>//api/name/initWithUserId:appId:backgroundUrl:skin:loadingTimeout:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SPInterstitialViewController/init</TokenIdentifier>
+			<Abstract type="html">Please don&apos;t initialize this class directly, rather access it through [SponsorPaySDK interstitialViewController] or [SponsorPaySDK interstitialViewControllerForCredentials:]</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SPInterstitialViewController/startLoadingWithParentViewController:</TokenIdentifier>
+			<Abstract type="html">Attempts to load and, if available, presents the SponsorPay Interstitial as a child view controller of your own view controller.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)startLoadingWithParentViewController:(UIViewController *)parentVC</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parentVC</Name>
+					<Abstract type="html">An instance of your own UIViewController subclass that will be used as the parent view controller of the presented Interstitial.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startLoadingWithParentViewController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SPInterstitialViewController/cancelInterstitialRequest</TokenIdentifier>
+			<Abstract type="html">Cancels a pending request for interstitial offer. If the answer has been already received and the Interstitial is being displayed this call will have no effect. In this case please use [SPAdvertisementViewController dismissAnimated:] instead.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)cancelInterstitialRequest</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether this invocation resulted in a canceled request.</Abstract></ReturnValue>
+			<Anchor>//api/name/cancelInterstitialRequest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SPInterstitialViewController/dismissAnimated:</TokenIdentifier>
+			<Abstract type="html">Dismisses the presented advertisement.</Abstract>
+			<DeclaredIn>SPInterstitialViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)dismissAnimated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">Whether the dismissal should be animated.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/dismissAnimated:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
