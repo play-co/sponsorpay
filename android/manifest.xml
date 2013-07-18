@@ -1,0 +1,16 @@
+<!--START_PLUGINS_MANIFEST-->
+	<!--SponsorPay-->
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<!--END_PLUGINS_MANIFEST-->
+<!--START_PLUGINS_APPLICATION-->
+	<!--SponsorPay-->
+	<meta-data android:name="SPONSORPAY_APP_ID" android:value="" />
+	<meta-data android:name="SPONSORPAY_SECURITY_TOKEN" android:value="" />
+	<receiver
+		android:exported="true"
+		android:name="com.sponsorpay.sdk.android.advertiser.InstallReferrerReceiver" >
+		<intent-filter >
+			<action android:name="com.android.vending.INSTALL_REFERRER" />
+		</intent-filter>
+	</receiver>
+<!--END_PLUGINS_APPLICATION-->
