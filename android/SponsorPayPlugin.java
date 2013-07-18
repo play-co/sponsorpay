@@ -45,9 +45,9 @@ public class SponsorPayPlugin implements IPlugin {
 
 			logger.log("{sponsorPay} Initializing from manifest with sponsorPayAppID=", sponsorPayAppID);
 
-			_spi = SponsorPayPublisher.getIntentForOfferWallActivity(_ctx, true);
-
 			SponsorPay.start(sponsorPayAppID, null, sponsorPaySecurityToken, _ctx);
+
+			_spi = SponsorPayPublisher.getIntentForOfferWallActivity(_ctx, true);
         } catch (Exception e) {
 			logger.log("{sponsorPay} Exception:", e.getMessage().toString());
         }

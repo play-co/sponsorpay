@@ -13,4 +13,5 @@
 			<action android:name="com.android.vending.INSTALL_REFERRER" />
 		</intent-filter>
 	</receiver>
+	<activity android:name="com.sponsorpay.sdk.android.publisher.OfferWallActivity" android:configChanges="orientation"/>
 <!--END_PLUGINS_APPLICATION-->
