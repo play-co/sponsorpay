@@ -1,1 +1,0 @@
-appledoc --project-name "SponsorPay iOS SDK" --project-company "SponsorPay" --company-id com.sponsorpay --no-repeat-first-par --output ./sponsorpay-sdk/doc/ --clean-output --ignore SBJson --ignore iToast --ignore Reachability --keep-intermediate-files ./sponsorpay-sdk/

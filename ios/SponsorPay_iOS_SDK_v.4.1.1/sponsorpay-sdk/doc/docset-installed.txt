@@ -1,4 +1,0 @@
-Documentation set was installed to Xcode!
-
-Path: /Users/David/Library/Developer/Shared/Documentation/DocSets/com.sponsorpay.SponsorPay-iOS-SDK.docset
-Time: 2013-03-28 17:14:47 +0000
