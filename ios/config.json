@@ -45,15 +45,22 @@
 		"sponsorpay-sdk-lib/SponsorPaySDK.h"
 	],
 	"arccode": [
+		"Fyber_UnityAds_Mediation_2.4.3/SPUnityAdsNetwork.h",
+		"Fyber_UnityAds_Mediation_2.4.3/SPUnityAdsNetwork.m",
+		"Fyber_UnityAds_Mediation_2.4.3/SPUnityAdsRewardedVideoAdapter.h",
+		"Fyber_UnityAds_Mediation_2.4.3/SPUnityAdsRewardedVideoAdapter.m"
 	],
 	"resources": [
-		"sponsorpay-sdk-lib/libSponsorPaySDK-7.1.0.a"
+		"sponsorpay-sdk-lib/libSponsorPaySDK-7.1.0.a",
+		"UnityAds.bundle"
 	],
 	"frameworks": [
 		"AdSupport",
 		"CoreLocation",
+		"CoreMedia",
 		"CoreTelephony",
 		"MediaPlayer",
-		"sponsorpay-sdk-lib/libSponsorPaySDK-7.1.0.a"
+		"sponsorpay-sdk-lib/libSponsorPaySDK-7.1.0.a",
+		"UnityAds.framework"
 	]
 }

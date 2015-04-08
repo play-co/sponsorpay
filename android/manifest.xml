@@ -5,6 +5,9 @@
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+	<!--UnityAds-->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
 <!--END_PLUGINS_MANIFEST-->
 <!--START_PLUGINS_APPLICATION-->
 	<!--SponsorPay-->
@@ -26,4 +29,11 @@
 		android:configChanges="screenSize|orientation"
 		android:name="com.sponsorpay.publisher.mbe.SPBrandEngageActivity"
 		android:hardwareAccelerated="true"/>
+
+	<!--UnityAds-->
+	 <activity android:name="com.unity3d.ads.android.view.UnityAdsFullscreenActivity"
+		android:configChanges=
+		"fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+		android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+		android:hardwareAccelerated="true" />
 <!--END_PLUGINS_APPLICATION-->

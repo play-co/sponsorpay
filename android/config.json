@@ -6,7 +6,9 @@
 	],
 	"libraries": [],
 	"jars": [
-		"sponsorpay-android-sdk.jar"
+		"sponsorpay-android-sdk.jar",
+		"fyber-mediation-unityads-2.2.6.jar",
+		"unity-ads.jar"
 	],
 	"injectionXML": "manifest.xml",
 	"injectionXSL": "manifest.xsl"
