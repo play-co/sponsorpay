@@ -1,6 +1,10 @@
 <!--START_PLUGINS_MANIFEST-->
 	<!--SponsorPay-->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
 <!--END_PLUGINS_MANIFEST-->
 <!--START_PLUGINS_APPLICATION-->
 	<!--SponsorPay-->
@@ -14,4 +18,12 @@
 		</intent-filter>
 	</receiver>
 	<activity android:name="com.sponsorpay.sdk.android.publisher.OfferWallActivity" android:configChanges="orientation"/>
+	<activity
+		android:configChanges="screenSize|orientation"
+		android:name="com.sponsorpay.publisher.interstitial.SPInterstitialActivity"
+		android:hardwareAccelerated="true"/>
+	<activity
+		android:configChanges="screenSize|orientation"
+		android:name="com.sponsorpay.publisher.mbe.SPBrandEngageActivity"
+		android:hardwareAccelerated="true"/>
 <!--END_PLUGINS_APPLICATION-->

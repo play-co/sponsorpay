@@ -1,11 +1,13 @@
 {
-    "copyFiles": [
+	"copyFiles": [
 		"SponsorPayPlugin.java"
 	],
-    "libraries": [],
-    "jars": [
+	"copyGameFiles": [
+	],
+	"libraries": [],
+	"jars": [
 		"sponsorpay-android-sdk.jar"
 	],
-    "injectionXML": "manifest.xml",
+	"injectionXML": "manifest.xml",
 	"injectionXSL": "manifest.xsl"
 }
