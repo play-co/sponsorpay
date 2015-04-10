@@ -42,18 +42,43 @@
 		"sponsorpay-sdk-lib/SPVirtualCurrencyRequestErrorType.h",
 		"sponsorpay-sdk-lib/SPVirtualCurrencyServerConnector.h",
 		"sponsorpay-sdk-lib/SP_SDK_versions.h",
-		"sponsorpay-sdk-lib/SponsorPaySDK.h"
+		"sponsorpay-sdk-lib/SponsorPaySDK.h",
+		"applovin-ios-sdk-2.5.4/headers/ALAd.h",
+		"applovin-ios-sdk-2.5.4/headers/ALAdDisplayDelegate.h",
+		"applovin-ios-sdk-2.5.4/headers/ALAdLoadDelegate.h",
+		"applovin-ios-sdk-2.5.4/headers/ALAdRewardDelegate.h",
+		"applovin-ios-sdk-2.5.4/headers/ALAdService.h",
+		"applovin-ios-sdk-2.5.4/headers/ALAdSize.h",
+		"applovin-ios-sdk-2.5.4/headers/ALAdType.h",
+		"applovin-ios-sdk-2.5.4/headers/ALAdUpdateDelegate.h",
+		"applovin-ios-sdk-2.5.4/headers/ALAdVideoPlaybackDelegate.h",
+		"applovin-ios-sdk-2.5.4/headers/ALAdView.h",
+		"applovin-ios-sdk-2.5.4/headers/ALErrorCodes.h",
+		"applovin-ios-sdk-2.5.4/headers/ALIncentivizedInterstitialAd.h",
+		"applovin-ios-sdk-2.5.4/headers/ALInterstitialAd.h",
+		"applovin-ios-sdk-2.5.4/headers/ALSdk.h",
+		"applovin-ios-sdk-2.5.4/headers/ALSdkSettings.h",
+		"applovin-ios-sdk-2.5.4/headers/ALSwiftHeaders.h",
+		"applovin-ios-sdk-2.5.4/headers/ALTargetingData.h"
 	],
 	"arccode": [
+		"Fyber_AppLovin_Mediation_2.3.0/SPAppLovinNetwork.h",
+		"Fyber_AppLovin_Mediation_2.3.0/SPAppLovinNetwork.m",
+		"Fyber_AppLovin_Mediation_2.3.0/SPAppLovinRewardedVideoAdapter.h",
+		"Fyber_AppLovin_Mediation_2.3.0/SPAppLovinRewardedVideoAdapter.m"
 	],
 	"resources": [
-		"sponsorpay-sdk-lib/libSponsorPaySDK-7.1.0.a"
 	],
 	"frameworks": [
 		"AdSupport",
+		"AVFoundation",
+		"CoreGraphics",
 		"CoreLocation",
+		"CoreMedia",
 		"CoreTelephony",
 		"MediaPlayer",
-		"sponsorpay-sdk-lib/libSponsorPaySDK-7.1.0.a"
+		"SystemConfiguration",
+		"sponsorpay-sdk-lib/libSponsorPaySDK-7.1.0.a",
+		"libAppLovinSdk.a"
 	]
 }

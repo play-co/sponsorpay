@@ -5,6 +5,9 @@
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+	<!--AppLovin-->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
 <!--END_PLUGINS_MANIFEST-->
 <!--START_PLUGINS_APPLICATION-->
 	<!--SponsorPay-->
@@ -26,4 +29,14 @@
 		android:configChanges="screenSize|orientation"
 		android:name="com.sponsorpay.publisher.mbe.SPBrandEngageActivity"
 		android:hardwareAccelerated="true"/>
+
+	<!--AppLovin-->
+	<meta-data android:name="applovin.sdk.key" android:value="" />
+	<!--GooglePlayServices-->
+	<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
 <!--END_PLUGINS_APPLICATION-->
+
+<!--START_PLUGINS_ACTIVITY-->
+	<activity android:name="com.applovin.adview.AppLovinInterstitialActivity" />
+	<activity android:name="com.applovin.adview.AppLovinConfirmationActivity" />
+<!--END_PLUGINS_ACTIVITY-->

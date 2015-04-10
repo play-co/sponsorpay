@@ -1,12 +1,17 @@
 {
 	"copyFiles": [
-		"SponsorPayPlugin.java"
+		"SponsorPayPlugin.java",
+		"res/values/version.xml"
 	],
 	"copyGameFiles": [
+		"src/adapters.info"
 	],
 	"libraries": [],
 	"jars": [
-		"sponsorpay-android-sdk.jar"
+		"sponsorpay-android-sdk.jar",
+		"sp-mediation-applovin-1.4.1.jar",
+		"applovin-sdk-5.4.3.jar",
+		"gps.jar"
 	],
 	"injectionXML": "manifest.xml",
 	"injectionXSL": "manifest.xsl"

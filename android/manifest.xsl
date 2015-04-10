@@ -3,6 +3,7 @@
 
 	<xsl:param name="sponsorPayAppID" />
 	<xsl:param name="sponsorPaySecurityToken" />
+	<xsl:param name="appLovinSdkID" />
 
 	<xsl:output indent="yes" />
 	<xsl:template match="comment()" />
@@ -13,6 +14,10 @@
 
 	<xsl:template match="meta-data[@android:name='SPONSORPAY_SECURITY_TOKEN']">
 		<meta-data android:name="SPONSORPAY_SECURITY_TOKEN" android:value="{$sponsorPaySecurityToken}"/>
+	</xsl:template>
+
+	<xsl:template match="meta-data[@android:name='applovin.sdk.key']">
+		<meta-data android:name="applovin.sdk.key" android:value="{$appLovinSdkID}"/>
 	</xsl:template>
 
 	<xsl:output indent="yes" />
