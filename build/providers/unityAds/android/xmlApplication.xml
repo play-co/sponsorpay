@@ -1,0 +1,6 @@
+    <!--UnityAds-->
+     <activity android:name="com.unity3d.ads.android.view.UnityAdsFullscreenActivity"
+        android:configChanges=
+        "fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:hardwareAccelerated="true" />

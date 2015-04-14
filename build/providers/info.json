@@ -1,0 +1,16 @@
+{
+    "unityAds": {
+        "adaptersInfo": {
+            "identifier": {
+                "key": "qualifiedName",
+                "value": "com.sponsorpay.mediation.UnityAdsMediationAdapter"
+            }
+        },
+        "adaptersConfig": {
+            "identifier": {
+                "key": "name",
+                "value": "Applifier"
+            }
+        }
+    }
+}

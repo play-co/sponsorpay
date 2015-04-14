@@ -41,6 +41,9 @@ var SponsorPay = Class(Emitter, function (supr) {
 
   /* sponsorpay */
   this.initializeSponsorPay = function (opts) {
+    // set debug flag matching build type -- android only
+    opts = opts || {};
+    opts.debug = !!DEBUG;
     this._sendEvent('initializeSponsorPay', opts);
   };
 

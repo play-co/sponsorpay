@@ -1,0 +1,19 @@
+	<!--SponsorPay-->
+	<meta-data android:name="SPONSORPAY_APP_ID" android:value="" />
+	<meta-data android:name="SPONSORPAY_SECURITY_TOKEN" android:value="" />
+	<receiver
+		android:exported="true"
+		android:name="com.sponsorpay.sdk.android.advertiser.InstallReferrerReceiver" >
+		<intent-filter >
+			<action android:name="com.android.vending.INSTALL_REFERRER" />
+		</intent-filter>
+	</receiver>
+	<activity android:name="com.sponsorpay.sdk.android.publisher.OfferWallActivity" android:configChanges="orientation"/>
+	<activity
+		android:configChanges="screenSize|orientation"
+		android:name="com.sponsorpay.publisher.interstitial.SPInterstitialActivity"
+		android:hardwareAccelerated="true"/>
+	<activity
+		android:configChanges="screenSize|orientation"
+		android:name="com.sponsorpay.publisher.mbe.SPBrandEngageActivity"
+		android:hardwareAccelerated="true"/>
