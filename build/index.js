@@ -347,9 +347,19 @@ function concatContent(promises) {
  */
 function processAdaptersInfo(providers, pluginInfoContent, adaptersInfoContent) {
 
-  // TODO: bail with useful error if invalid json files
-  var pluginInfo = JSON.parse(pluginInfoContent);
-  var adaptersInfo = JSON.parse(adaptersInfoContent);
+  var pluginInfo = {};
+  try {
+    pluginInfo = JSON.parse(pluginInfoContent);
+  } catch (e) {
+    logger.error("{sponsorPay} FATAL: Failed to parse info.config from your sponsorpay module. Your module installation may be corrupted.", e.toString());
+  }
+
+  var adaptersInfo = {adapters: []};
+  try {
+    adaptersInfo = JSON.parse(adaptersInfoContent);
+  } catch (e) {
+    logger.error("{sponsorPay} FATAL: Failed to parse adapters.info from your application's src folder. Sponsorpay cannot be initialized.", e.toString());
+  }
 
   var finalInfo = { adapters: [] };
   for (var i = 0; i < providers.length; i++) {
@@ -383,8 +393,19 @@ function processAdaptersInfo(providers, pluginInfoContent, adaptersInfoContent) 
  */
 function processAdaptersConfig(providers, pluginInfoContent, adaptersConfigContent) {
 
-  var pluginInfo = JSON.parse(pluginInfoContent);
-  var adaptersConfig = JSON.parse(adaptersConfigContent);
+  var pluginInfo = {};
+  try {
+    pluginInfo = JSON.parse(pluginInfoContent);
+  } catch (e) {
+    logger.error("{sponsorPay} FATAL: Failed to parse info.config from your sponsorpay module. Your module installation may be corrupted.", e.toString());
+  }
+
+  var adaptersConfig = {adapters: []};
+  try {
+    adaptersConfig = JSON.parse(adaptersConfigContent);
+  } catch (e) {
+    logger.error("{sponsorPay} FATAL: Failed to parse adapters.config from your application's src folder. Sponsorpay cannot be initialized.", e.toString());
+  }
 
   var finalConfig = { adapters: [] };
   for (var i = 0; i < providers.length; i++) {
