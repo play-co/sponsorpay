@@ -12,5 +12,20 @@
                 "value": "Applifier"
             }
         }
+    },
+
+    "applovin": {
+        "adaptersInfo": {
+            "identifier": {
+                "key": "qualifiedName",
+                "value": "com.sponsorpay.mediation.AppLovinMediationAdapter"
+            }
+        },
+        "adaptersConfig": {
+            "identifier": {
+                "key": "name",
+                "value": "AppLovin"
+            }
+        }
     }
 }
