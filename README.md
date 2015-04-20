@@ -163,6 +163,11 @@ above for more details).
    in your manifest.
 1. Entering your UnityAds credentials in `adapters.info`.
 
+#### AppLovin
+1. Add `applovin` to the `manifest.addons.sponsorpay.<PLATFORM>.providers` lists
+   in your manifest.
+1. Add the `android.appLovinSdkID` fields to your manifest with the AppLovin
+   SDK ID from the applovin dashboard.
 
 
 ## Integrating Additional Providers
