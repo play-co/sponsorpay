@@ -151,10 +151,7 @@ exports.onBeforeBuild = function (devkitAPI, app, config, cb) {
       readFileAsync(path.join(__dirname, 'providers', 'info.json'), 'utf8'),
 
       // read adapters.info
-      readFileAsync(
-        path.join(app.paths.src, 'adapters.info'),
-        'utf8'
-      ),
+      readFileAsync(path.join(__dirname, 'android', 'adapters.info'), 'utf8'),
 
       // read adapters.config
       readFileAsync(

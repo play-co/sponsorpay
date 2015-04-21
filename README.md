@@ -67,18 +67,18 @@ providers you can add to these list.
 
 Note that the manifest keys are case-sensitive.
 
-#### adapters.config and adapters.info
+#### adapters.config
 
-Sponsorpay/Fyber uses two files, `adapters.info` and `adapters.config` to
-set up additional providers on android. You will need to download these
-files for the Fyber/SponsorPay version 7.1.0 and enter your credentials
-for all of the providers you may wish to use. Put these files in your
-application's `src` folder.
+Sponsorpay/Fyber uses a local config file (`adapters.config`) to
+set up additional providers on android. You will need to download the
+default adapters.config file for Fyber/SponsorPay version 7.1.0 and enter your
+credentials for all of the providers you may wish to use. Put this file in
+your application's `src` folder.
 
 Unlike a standard Fyber integration, this plugin will automatically
 choose the correct parts of the adapter files and only use those
 you specify in your manifest, so you can include all of your accounts and not
-worry about it breaking your build if you add/remove a key in 
+worry about it breaking your build if you add/remove a key in your config.
 
 
 ## Usage
@@ -154,14 +154,14 @@ list and adding any necessary SDK keys. The SponsorPay module will
 use the providers list to automatically create all of your configuration
 
 For android builds, ensure you have properly included and filled out the
-`adapters.info` file in your application's `src` folder (see the `setup` section
-above for more details).
+`adapters.config` file in your application's `src` folder (see the `setup`
+section above for more details).
 
 
 #### UnityAds
 1. Add `unityAds` to the `manifest.addons.sponsorpay.<PLATFORM>.providers` lists
    in your manifest.
-1. Entering your UnityAds credentials in `adapters.info`.
+1. Enter your UnityAds credentials in `adapters.config`.
 
 #### AppLovin
 1. Add `applovin` to the `manifest.addons.sponsorpay.<PLATFORM>.providers` lists
