@@ -27,5 +27,20 @@
                 "value": "AppLovin"
             }
         }
+    },
+
+    "adcolony": {
+        "adaptersInfo": {
+            "identifier": {
+                "key": "qualifiedName",
+                "value": "com.sponsorpay.mediation.AdColonyMediationAdapter"
+            }
+        },
+        "adaptersConfig": {
+            "identifier": {
+                "key": "name",
+                "value": "AdColony"
+            }
+        }
     }
 }

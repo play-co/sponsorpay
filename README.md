@@ -169,6 +169,11 @@ section above for more details).
 1. Add the `android.appLovinSdkID` fields to your manifest with the AppLovin
    SDK ID from the applovin dashboard.
 
+#### AdColony
+1. Add `adcolony` to the `manifest.addons.sponsorpay.<PLATFORM>.providers` lists
+   in your manifest.
+1. Enter your AdColony credentials in `adapters.config`.
+
 
 ## Integrating Additional Providers
 
