@@ -50,12 +50,16 @@ included in the build and you will not be able to use them in your game.
     "sponsorpay": {
         "android": {
             "providers": [
-                "unityAds"
+                "adcolony",
+                "applovin",
+                "unityads"
             ]
         },
         "ios": {
             "providers": [
-                "unityAds"
+                "adcolony",
+                "applovin",
+                "unityads"
             ]
         }
     }
@@ -159,7 +163,7 @@ section above for more details).
 
 
 #### UnityAds
-1. Add `unityAds` to the `manifest.addons.sponsorpay.<PLATFORM>.providers` lists
+1. Add `unityads` to the `manifest.addons.sponsorpay.<PLATFORM>.providers` lists
    in your manifest.
 1. Enter your UnityAds credentials in `adapters.config`.
 
