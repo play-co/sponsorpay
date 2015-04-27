@@ -111,9 +111,9 @@ sponsorpay.initializeSponsorPay({
 
 After initialization, sponsorpay will emit an `Initialized` event. Any time
 after initialization you can tell Sponsorpay/Fyber to cache a video from
-one of the ad providers. Listen for the `VideoAvailable` event to be notified
-when a video ad is available, at which point call `sponsorpay.showVideo()` to
-display it.
+one of the ad providers by calling `sponsorpay.cacheVideo()`. Listen for the
+`VideoAvailable` event to be notified when a video ad is available, at which
+point call `sponsorpay.showVideo()` to display it.
 
 This is an overly simple example. Check out the [demo
 application](https://github.com/gameclosure/demoSponsorpay) for a full
@@ -134,17 +134,19 @@ to the user in order to give the ad providers enough time to fully initialize.
 
 
 ####Methods
-`sponsorpay.initializeSponsorPay`
-`sponsorpay.cacheVideo`
-`sponsorpay.showVideo`
+
+- `sponsorpay.initializeSponsorPay`
+- `sponsorpay.cacheVideo`
+- `sponsorpay.showVideo`
 
 
 ####Events
-`Initialized`
-`VideoAvailable`
-`VideoNotAvailable`
-`VideoError`
-`VideoCompleted`
+
+- `Initialized`
+- `VideoAvailable`
+- `VideoNotAvailable`
+- `VideoError`
+- `VideoCompleted`
 
 
 ## Pre-Integrated Providers
@@ -163,17 +165,20 @@ section above for more details).
 
 
 #### UnityAds
+
 1. Add `unityads` to the `manifest.addons.sponsorpay.<PLATFORM>.providers` lists
    in your manifest.
 1. Enter your UnityAds credentials in `adapters.config`.
 
 #### AppLovin
+
 1. Add `applovin` to the `manifest.addons.sponsorpay.<PLATFORM>.providers` lists
    in your manifest.
 1. Add the `android.appLovinSdkID` fields to your manifest with the AppLovin
    SDK ID from the applovin dashboard.
 
 #### AdColony
+
 1. Add `adcolony` to the `manifest.addons.sponsorpay.<PLATFORM>.providers` lists
    in your manifest.
 1. Enter your AdColony credentials in `adapters.config`.
@@ -183,7 +188,7 @@ section above for more details).
 
 If your desired provider has not been added to the plugin, you'll need to
 manually add all of the files and configuration to the correct locations in
-the build/providers/provider name folder.
+the build/providers/<provider_name> folder.
 
 EXTREMELY IMPORTANT - the auto-configuration being done for providers means
 the standard android and ios folders are deleted before build every time and
@@ -197,8 +202,8 @@ contributing your successful integrations back to the project so others
 can use that provider without additional work.
 
 
-
 ## Important Notes
+
 The iOS fyber/sponsorpay sdk requires the `-ObjC` linker flag added to your
 xcode project. This is done automatically by the module, but be aware of how
 it may change your application. [Read more](https://developer.apple.com/library/mac/qa/qa1490/_index.html).
@@ -211,11 +216,13 @@ overwriting your changes on new builds.
 
 
 ## Creating Integration Documentation for Manual Integrations
+
 Integrating each network provider can be a little hairy (adding Unity to iOS
 involved a few more steps than the Fyber or Unity docs included), so detailed
 start-to-finish integration docs for each network would be fantastic.
 
 
 ## Demo Application
+
 Check out the [demo application](https://github.com/gameclosure/demoSponsorpay)
 for a full implementation.
