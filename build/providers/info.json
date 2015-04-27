@@ -1,0 +1,46 @@
+{
+    "unityAds": {
+        "adaptersInfo": {
+            "identifier": {
+                "key": "qualifiedName",
+                "value": "com.sponsorpay.mediation.UnityAdsMediationAdapter"
+            }
+        },
+        "adaptersConfig": {
+            "identifier": {
+                "key": "name",
+                "value": "Applifier"
+            }
+        }
+    },
+
+    "applovin": {
+        "adaptersInfo": {
+            "identifier": {
+                "key": "qualifiedName",
+                "value": "com.sponsorpay.mediation.AppLovinMediationAdapter"
+            }
+        },
+        "adaptersConfig": {
+            "identifier": {
+                "key": "name",
+                "value": "AppLovin"
+            }
+        }
+    },
+
+    "adcolony": {
+        "adaptersInfo": {
+            "identifier": {
+                "key": "qualifiedName",
+                "value": "com.sponsorpay.mediation.AdColonyMediationAdapter"
+            }
+        },
+        "adaptersConfig": {
+            "identifier": {
+                "key": "name",
+                "value": "AdColony"
+            }
+        }
+    }
+}

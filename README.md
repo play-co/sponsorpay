@@ -23,8 +23,11 @@ devkit install https://github.com/gameclosure/sponsorpay
 Before you can use SponsorPay/Fyber you must specify your game's
 Fyber App ID and Security Token from the Fyber dashboard. Edit the
 `manifest.json` "android" and "ios" sections to include `sponsorPayAppID`
-and `sponsorPaySecurityToken` as shown below.
+and `sponsorPaySecurityToken` as shown below. You will likely need
+other changes for each additional provider you select - see the
+`Pre-Integrated Providers` section below for details.
 
+#### Manifest.json
 ~~~
   "android": {
     "sponsorPayAppID": "15085",
@@ -39,7 +42,47 @@ and `sponsorPaySecurityToken` as shown below.
   },
 ~~~
 
+You must add all of the providers you wish to bundle with your application
+to the `addons.sponsorpay.<PLATFORM>.providers` lists or they will not be
+included in the build and you will not be able to use them in your game.
+~~~
+"addons": {
+    "sponsorpay": {
+        "android": {
+            "providers": [
+                "adcolony",
+                "applovin",
+                "unityads"
+            ]
+        },
+        "ios": {
+            "providers": [
+                "adcolony",
+                "applovin",
+                "unityads"
+            ]
+        }
+    }
+}
+~~~
+
+See the `Pre-Integrated Providers` section below for a list of working
+providers you can add to these list.
+
 Note that the manifest keys are case-sensitive.
+
+#### adapters.config
+
+Sponsorpay/Fyber uses a local config file (`adapters.config`) to
+set up additional providers on android. You will need to download the
+default adapters.config file for Fyber/SponsorPay version 7.1.0 and enter your
+credentials for all of the providers you may wish to use. Put this file in
+your application's `src` folder.
+
+Unlike a standard Fyber integration, this plugin will automatically
+choose the correct parts of the adapter files and only use those
+you specify in your manifest, so you can include all of your accounts and not
+worry about it breaking your build if you add/remove a key in your config.
 
 
 ## Usage
@@ -68,9 +111,9 @@ sponsorpay.initializeSponsorPay({
 
 After initialization, sponsorpay will emit an `Initialized` event. Any time
 after initialization you can tell Sponsorpay/Fyber to cache a video from
-one of the ad providers. Listen for the `VideoAvailable` event to be notified
-when a video ad is available, at which point call `sponsorpay.showVideo()` to
-display it.
+one of the ad providers by calling `sponsorpay.cacheVideo()`. Listen for the
+`VideoAvailable` event to be notified when a video ad is available, at which
+point call `sponsorpay.showVideo()` to display it.
 
 This is an overly simple example. Check out the [demo
 application](https://github.com/gameclosure/demoSponsorpay) for a full
@@ -91,65 +134,76 @@ to the user in order to give the ad providers enough time to fully initialize.
 
 
 ####Methods
-`sponsorpay.initializeSponsorPay`
-`sponsorpay.cacheVideo`
-`sponsorpay.showVideo`
+
+- `sponsorpay.initializeSponsorPay`
+- `sponsorpay.cacheVideo`
+- `sponsorpay.showVideo`
 
 
 ####Events
-`Initialized`
-`VideoAvailable`
-`VideoNotAvailable`
-`VideoError`
-`VideoCompleted`
+
+- `Initialized`
+- `VideoAvailable`
+- `VideoNotAvailable`
+- `VideoError`
+- `VideoCompleted`
+
+
+## Pre-Integrated Providers
+
+The Fyber/SponsorPay plugin comes with several ad providers already
+available in order to make using the plugin as easy as possible.
+
+Adding one of the included providers is usually as easy as adding
+the provider name to the manifest `addons.sponsorpay.[platform].providers`
+list and adding any necessary SDK keys. The SponsorPay module will
+use the providers list to automatically create all of your configuration
+
+For android builds, ensure you have properly included and filled out the
+`adapters.config` file in your application's `src` folder (see the `setup`
+section above for more details).
+
+
+#### UnityAds
+
+1. Add `unityads` to the `manifest.addons.sponsorpay.<PLATFORM>.providers` lists
+   in your manifest.
+1. Enter your UnityAds credentials in `adapters.config`.
+
+#### AppLovin
+
+1. Add `applovin` to the `manifest.addons.sponsorpay.<PLATFORM>.providers` lists
+   in your manifest.
+1. Add the `android.appLovinSdkID` fields to your manifest with the AppLovin
+   SDK ID from the applovin dashboard.
+
+#### AdColony
+
+1. Add `adcolony` to the `manifest.addons.sponsorpay.<PLATFORM>.providers` lists
+   in your manifest.
+1. Enter your AdColony credentials in `adapters.config`.
 
 
 ## Integrating Additional Providers
-When integrating additional ad providers, first follow the instructions on the
-Fyber and Ad Provider website to properly set up the necessary information for
-your application. Next, follow the instructions below to get devkit to
-include the necessary files in your build process.
 
-For now, integrating additional networks requires manually changing the
-config.json files inside the android and ios folders in your sponsorpay plugin
-folder itself.
+If your desired provider has not been added to the plugin, you'll need to
+manually add all of the files and configuration to the correct locations in
+the build/providers/<provider_name> folder.
 
-The [project wiki](https://github.com/gameclosure/sponsorpay/wiki) includes
-instructions for setting up various additional providers.
+EXTREMELY IMPORTANT - the auto-configuration being done for providers means
+the standard android and ios folders are deleted before build every time and
+created as necessary. DO NOT PUT FILES YOU NEED IN THESE FOLDERS (or check out
+a previous version of the plugin).
 
-This has been tested with the UnityAds integration for both Android and iOS.
-Other providers may require additional steps.
-
-###Android
-- If you are using customized `adapters.config` and `adapters.info`, add
-them to your application's `src` folder.
-- Add any .jar files to the sponsorpay/android folder.
-
-- Edit sponsorpay/android/config.json:
-  - Add any .jar files to the "jars" list.
-  - Add `adapters.config` and `adapters.info` to the `copyGameFiles` list
-  if you are using them.
-
-###iOS
-- Add any .bundle and .framework files to the sponsorpay/ios folder.
-- Add the network adaptors to the sponsorpay/ios folder.
-
-- Edit sponsorpay/ios/config.json
-  - Add .framework files to the "frameworks" list.
-  - Add .bundle files to the "resources" list.
-  - Add each of the mentioned .m and .h files from the instructions to the
-  "code" list. NOTE: if the code must have ARC enabled (like Unity, for
-  example), add the files to the `arccode` list *instead of* the `code` list.
-  - If the framework you are integrating requires additional linker flags, add
-  them to the `additionalLinkerFlags` list (can be a string if there is just
-  one).
-  - If the framework you are integrating requires additional frameworks,
-  add them to the "frameworks" list (NOTE: sometimes this is undocumented -
-  for example, Unity required CoreMedia)
-
+You will likely need a combination of config.json, manifest.xml, manifest.xsl,
+adapters.config, adapters.info, and various file changes to create a working
+integration. Follow the existing integrations as a guide and consider
+contributing your successful integrations back to the project so others
+can use that provider without additional work.
 
 
 ## Important Notes
+
 The iOS fyber/sponsorpay sdk requires the `-ObjC` linker flag added to your
 xcode project. This is done automatically by the module, but be aware of how
 it may change your application. [Read more](https://developer.apple.com/library/mac/qa/qa1490/_index.html).
@@ -161,12 +215,14 @@ android build folder and xcode project, but be aware of the build process
 overwriting your changes on new builds.
 
 
-## Creating Integration Documentation
+## Creating Integration Documentation for Manual Integrations
+
 Integrating each network provider can be a little hairy (adding Unity to iOS
 involved a few more steps than the Fyber or Unity docs included), so detailed
 start-to-finish integration docs for each network would be fantastic.
 
 
 ## Demo Application
+
 Check out the [demo application](https://github.com/gameclosure/demoSponsorpay)
 for a full implementation.

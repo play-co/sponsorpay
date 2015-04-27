@@ -1,0 +1,11 @@
+{
+    "copyFiles": [
+        "res/values/version.xml"
+    ],
+
+   "jars": [
+        "sp-mediation-applovin-1.4.1.jar",
+        "applovin-sdk-5.4.3.jar",
+        "gps.jar"
+    ]
+}

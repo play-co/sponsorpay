@@ -1,0 +1,29 @@
+{
+	"additionalLinkerFlags": ["-ObjC"],
+	"code": [
+	],
+	"arccode": [
+		"Fyber_AdColony_Mediation_2.2.0/SPAdColonyNetwork.h",
+		"Fyber_AdColony_Mediation_2.2.0/SPAdColonyNetwork.m",
+		"Fyber_AdColony_Mediation_2.2.0/SPAdColonyRewardedVideoAdapter.h",
+		"Fyber_AdColony_Mediation_2.2.0/SPAdColonyRewardedVideoAdapter.m"
+	],
+	"frameworks": [
+		"libz.1.2.5.dylib",
+		"AdSupport",
+		"AdColony",
+		"AudioToolbox",
+		"AVFoundation",
+		"CoreGraphics",
+		"CoreMedia",
+		"CoreTelephony",
+		"EventKit",
+		"EventKitUI",
+		"MediaPlayer",
+		"MessageUI",
+		"Social",
+		"StoreKit",
+		"SystemConfiguration",
+		"WebKit"
+	]
+}

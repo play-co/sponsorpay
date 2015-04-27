@@ -1,0 +1,9 @@
+{
+    "copyFiles": [
+        "armeabi/libImmEndpointWarpJ.so"
+    ],
+   "jars": [
+        "fyber-mediation-adcolony-1.2.0.jar",
+        "adcolony.jar"
+    ]
+}
